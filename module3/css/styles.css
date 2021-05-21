@@ -53,16 +53,32 @@ h1 {
 #main-content .row {  /*section*/
     padding: 16px;
 }
-#main-content section {
-    background-color: olive;
-    opacity: .5;
-    color: beige;
-    margin-bottom: 24px;
-    padding: 32px;
-    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.5);
+.row section {
+    padding: 8px;
 }
-#main-content h2 {
-    text-align: center;
+.card-content {
+    position: relative;
+    background-color: olive;
+    margin: 0 auto 16px;
+    padding: 32px;
+    color: beige;
+    box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.5);
+}
+.card-text {
+    margin-bottom: 24px;
+}
+.card-content a {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    color: olive;
+    padding: 8px;
+    background-color: beige;
+}
+.card-content a:hover {
+    color: beige;
+    padding: 8px;
+    background-color: orange;
 }
 
 /********** xs devices only **********/
@@ -70,4 +86,5 @@ h1 {
     /*content*/
     #main-content .row {  
     padding: 4em;
+    }
 }
